@@ -1,0 +1,39 @@
+# dependencies
+node_modules/
+.pnp
+.pnp.js
+
+# next
+.next/
+out/
+*.tsbuildinfo
+
+# python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.mypy_cache/
+.ruff_cache/
+.venv/
+venv/
+
+# env
+.env
+.env.*
+!.env.example
+
+# database
+*.db
+*.sqlite
+*.sqlite3
+
+# build artifacts
+dist/
+build/
+coverage/
+
+# editor / os
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/

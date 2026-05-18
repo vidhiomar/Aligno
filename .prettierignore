@@ -1,0 +1,5 @@
+node_modules
+.next
+.venv
+backend/alembic/versions
+package-lock.json
