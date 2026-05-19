@@ -14,7 +14,7 @@ class Settings:
     environment: str = os.getenv("ENVIRONMENT", "development")
     debug: bool = _get_bool("DEBUG", True)
     api_v1_prefix: str = os.getenv("API_V1_PREFIX", "/api/v1")
-    backend_cors_origins: str = os.getenv("BACKEND_CORS_ORIGINS", "https://aligno.vercel.app,")
+    backend_cors_origins: str = os.getenv("BACKEND_CORS_ORIGINS", "https://aligno-zeta.vercel.app")
     create_tables_on_startup: bool = _get_bool("CREATE_TABLES_ON_STARTUP", True)
     seed_demo_data: bool = _get_bool("SEED_DEMO_DATA", True)
 
