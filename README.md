@@ -15,7 +15,7 @@
 
 
 <p align="center">
-  <img src="./frontend/public/LoginPagePhoto.png" alt="Aligno Login Screen" width="800" />
+  <img src="./public/LoginPagePhoto.png" alt="Aligno Login Screen" width="800" />
 </p>
 
 <p align="center">
