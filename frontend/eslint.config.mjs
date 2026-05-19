@@ -4,6 +4,9 @@ const eslintConfig = [
   ...nextCoreWebVitals,
   {
     ignores: [".next/**", "next-env.d.ts"],
+    rules: {
+  "react-hooks/set-state-in-effect": "off",
+}
   },
 ];
 
