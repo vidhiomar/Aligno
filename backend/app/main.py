@@ -43,7 +43,8 @@ async def prepare_mvp_database() -> None:
             await connection.run_sync(Base.metadata.create_all)
             await connection.run_sync(ensure_mvp_sqlite_columns)
 
-    await seed_demo()
+    if settings.seed_demo_data:
+        await seed_demo()
 
 
 def create_app() -> FastAPI:
