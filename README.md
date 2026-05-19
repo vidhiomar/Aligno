@@ -32,7 +32,7 @@
 ![Manager](./public/manager-review.png)
 
 ### 🛡️ Admin Analytics
-![Analytics](./public/admin-analytics.png)
+![Analytics](./public/admin.png)
 
 <p align="center">
   <a href="#-quick-start">Quick Start</a> ·
