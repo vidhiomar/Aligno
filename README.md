@@ -21,6 +21,14 @@
   <a href="https://aligno-pc76.onrender.com/docs">API Docs</a>
 </p>
 
+<p align="center">
+  <a href="#-quick-start">Quick Start</a> ·
+  <a href="#-features">Features</a> ·
+  <a href="#-architecture">Architecture</a> ·
+  <a href="#-user-roles--workflows">Workflows</a> ·
+  <a href="#-api-reference">API Reference</a>
+</p>
+
 ## 🖼️ Application Preview
 ### 🔐 Login Page
 ![Login](./public/LoginPagePhoto.png)
@@ -34,13 +42,7 @@
 ### 🛡️ Admin Analytics
 ![Analytics](./public/admin.png)
 
-<p align="center">
-  <a href="#-quick-start">Quick Start</a> ·
-  <a href="#-features">Features</a> ·
-  <a href="#-architecture">Architecture</a> ·
-  <a href="#-user-roles--workflows">Workflows</a> ·
-  <a href="#-api-reference">API Reference</a>
-</p>
+
 
 ---
 
