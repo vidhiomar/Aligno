@@ -10,11 +10,11 @@ def _get_bool(name: str, default: bool) -> bool:
 
 
 class Settings:
-    app_name: str = os.getenv("APP_NAME", "GoalSync")
+    app_name: str = os.getenv("APP_NAME", "Aligno")
     environment: str = os.getenv("ENVIRONMENT", "development")
     debug: bool = _get_bool("DEBUG", True)
     api_v1_prefix: str = os.getenv("API_V1_PREFIX", "/api/v1")
-    backend_cors_origins: str = os.getenv("BACKEND_CORS_ORIGINS", "http://localhost:3000")
+    backend_cors_origins: str = os.getenv("BACKEND_CORS_ORIGINS", "http://localhost:3000,*")
     create_tables_on_startup: bool = _get_bool("CREATE_TABLES_ON_STARTUP", True)
     seed_demo_data: bool = _get_bool("SEED_DEMO_DATA", True)
 
