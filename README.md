@@ -13,6 +13,11 @@
   <em>One portal for Employees · Managers · HR Admins</em>
 </p>
 
+
+<p align="center">
+  <img src="./frontend/public/LoginPagePhoto.png" alt="Aligno Login Screen" width="800" />
+</p>
+
 <p align="center">
   <a href="#-quick-start">Quick Start</a> ·
   <a href="#-features">Features</a> ·
