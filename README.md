@@ -429,17 +429,6 @@ The system enforces the following business rules at both UI and API levels:
 - ✅ Manager comment is **mandatory** for rework and rejection actions
 - ✅ Locked goals cannot be updated or deleted via API
 
----
-
-## 📝 Check-in Schedule
-
-| Period | Window Opens | Action |
-|--------|-------------|--------|
-| **Phase 1 — Goal Setting** | 1st May | Goal Creation, Submission & Approval |
-| **Q1 Check-in** | July | Progress Update — Planned vs. Actual |
-| **Q2 Check-in** | October | Progress Update — Planned vs. Actual |
-| **Q3 Check-in** | January | Progress Update — Planned vs. Actual |
-| **Q4 / Annual** | March / April | Final Achievement Capture |
 
 ---
 
