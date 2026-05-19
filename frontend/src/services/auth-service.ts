@@ -7,9 +7,25 @@ import type {
 } from "@/types/auth";
 
 export const authService = {
-  login: (payload: LoginPayload) =>
-    apiClient.post<AuthTokens, LoginPayload>("/auth/login", payload),
+  login: async (payload: LoginPayload) => {
+    const formData = new URLSearchParams();
+
+    formData.append("username", payload.email);
+    formData.append("password", payload.password);
+
+    return apiClient.post<AuthTokens>(
+      "/auth/login",
+      formData,
+      {
+        headers: {
+          "Content-Type": "application/x-www-form-urlencoded",
+        },
+      }
+    );
+  },
+
   register: (payload: RegisterPayload) =>
     apiClient.post<User, RegisterPayload>("/auth/register", payload),
+
   me: () => apiClient.get<User>("/auth/me"),
 };
