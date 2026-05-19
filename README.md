@@ -29,7 +29,7 @@
 ![Dashboard](./public/dashboard.png)
 
 ### 👩‍💼 Manager Review Panel
-![Manager](./public/manager-review.png)
+![Manager](./public/Manager-review.png)
 
 ### 🛡️ Admin Analytics
 ![Analytics](./public/admin.png)
