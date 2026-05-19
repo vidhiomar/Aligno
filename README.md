@@ -1,22 +1,38 @@
 <p align="center">
   <img src="https://img.shields.io/badge/Next.js-16-black?style=for-the-badge&logo=next.js" />
   <img src="https://img.shields.io/badge/FastAPI-0.115-009688?style=for-the-badge&logo=fastapi" />
-  <img src="https://img.shields.io/badge/SQLite-Local-003B57?style=for-the-badge&logo=sqlite" />
+  <img src="https://img.shields.io/badge/Render-Backend-46E3B7?style=for-the-badge&logo=render" />
+<img src="https://img.shields.io/badge/Vercel-Frontend-black?style=for-the-badge&logo=vercel" />
+<img src="https://img.shields.io/badge/FastAPI-Production-009688?style=for-the-badge&logo=fastapi" />
   <img src="https://img.shields.io/badge/TypeScript-5.x-3178C6?style=for-the-badge&logo=typescript" />
   <img src="https://img.shields.io/badge/TailwindCSS-4-06B6D4?style=for-the-badge&logo=tailwindcss" />
 </p>
 
-<h1 align="center">🎯 Aligno — Performance Management Portal</h1>
+<h1 align="center">🎯 Aligno : Performance Management Portal</h1>
 
 <p align="center">
   <strong>Enterprise-grade goal setting, approvals, quarterly check-ins, and analytics.</strong><br/>
   <em>One portal for Employees · Managers · HR Admins</em>
 </p>
 
-
 <p align="center">
-  <img src="./public/LoginPagePhoto.png" alt="Aligno Login Screen" width="800" />
+  🌐 Live Demo:
+  <a href="https://aligno-zeta.vercel.app">Frontend</a> |
+  <a href="https://aligno-pc76.onrender.com/docs">API Docs</a>
 </p>
+
+## 🖼️ Application Preview
+### 🔐 Login Page
+![Login](./public/LoginPagePhoto.png)
+
+### 📊 Employee Dashboard
+![Dashboard](./public/dashboard.png)
+
+### 👩‍💼 Manager Review Panel
+![Manager](./public/manager-review.png)
+
+### 🛡️ Admin Analytics
+![Analytics](./public/admin-analytics.png)
 
 <p align="center">
   <a href="#-quick-start">Quick Start</a> ·
@@ -93,6 +109,52 @@ graph TB
     style Server fill:#F0FDF4,stroke:#22C55E,stroke-width:2px
     style DB fill:#FFF7ED,stroke:#F97316,stroke-width:2px
 ```
+
+
+
+## ☁️ Production Deployment
+
+```mermaid
+graph LR
+    A["🌐 User Browser"] --> B["▲ Vercel Frontend"]
+    B --> C["⚡ FastAPI Backend"]
+    C --> D["🗄️ SQLite Database"]
+
+    subgraph Cloud
+        B
+        C
+        D
+    end
+
+    style B fill:#000,color:#fff
+    style C fill:#009688,color:#fff
+    style D fill:#003B57,color:#fff
+```
+
+## 🧠 Engineering Challenges Solved
+
+During production deployment, several real-world engineering issues were solved:
+
+- Configured CORS between Vercel frontend and Render backend
+- Fixed environment variable injection for production APIs
+- Solved FastAPI + Next.js payload mismatch issues
+- Resolved frontend build failures on Vercel
+- Fixed dependency resolution and deployment pipeline issues
+- Implemented JWT authentication flow end-to-end
+- Configured production-ready API communication
+- Debugged 422, 404, and CORS deployment errors
+
+This project demonstrates practical full-stack deployment and debugging experience beyond local development.
+
+### Deployment Stack
+
+| Service | Platform |
+|---|---|
+| Frontend | Vercel |
+| Backend | Render |
+| API Docs | Swagger / OpenAPI |
+| Database | SQLite |
+| Authentication | JWT |
 
 ### Tech Stack
 
@@ -432,6 +494,8 @@ The system enforces the following business rules at both UI and API levels:
 
 ---
 
+
+
 ## 📄 License
 
-This project was built for a performance management hackathon. All rights reserved.
+Aligno is a full-stack enterprise performance management platform designed to streamline goal setting, approvals, quarterly reviews, and organizational analytics.
